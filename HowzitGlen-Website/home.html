@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Howzit Glen | Surface Specialists</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-inner">
+
+            <a href="home.html" class="brand">
+                <img src="Media/HowzitGlenLogo.png" alt="Howzit Glen logo">
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="/Index.html" target="_blank">Other Services</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Videos.html">Videos</a>
+                <a href="Contact.html" class="active contact-btn">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HOWZIT GLEN: HERO GRID (3 blocks) -->
+    <section class="hg-hero">
+        <div class="hg-wrap">
+
+            <div class="hg-hero-grid">
+                <a class="hg-hero-card">
+                    <img src="Media/WetCoatingSpecialised.jpg" alt="Wet Coating">
+                    <div class="hg-hero-overlay">
+
+                    </div>
+                </a>
+
+                <a class="hg-hero-card">
+                    <img src="Media/CorrosionProtection.png" alt="Corrosion Protection">
+                    <div class="hg-hero-overlay">
+
+                    </div>
+                </a>
+
+                <a class="hg-hero-card">
+                    <img src="Media/SandBlasting.png" alt="Sand Blasting">
+                    <div class="hg-hero-overlay">
+
+                    </div>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- HOWZIT GLEN: MAIN CONTENT -->
+    <div class="hg-bottom">
+        <!-- LEFT: heading/text/buttons -->
+        <div class="hg-copy">
+            <div class="hg-kicker">HOWZIT GLEN • SURFACE SPECIALISTS</div>
+            <h2>Medical attention<br>for your metal.</h2>
+            <p>
+                Quality services including powder coating, sandblasting, chemical stripping,
+                wet coating and corrosion control. Reliable turnaround and professional finishes.
+            </p>
+
+            <div class="hg-cta">
+                <a class="btn primary" href="Contact.html">Request a Quote</a>
+                <a class="btn ghost" href="Gallery.html">View Work</a>
+            </div>
+        </div>
+
+        <!-- RIGHT: values card -->
+        <div class="hg-values panel">
+            <h3>Our Values</h3>
+            <ul>
+                <li><strong>Customer satisfaction:</strong> We deliver high quality service.</li>
+                <li><strong>Commitment to quality:</strong> Highest quality finishes.</li>
+                <li><strong>Honesty:</strong> Integrity in all interactions.</li>
+                <li><strong>Workmanship:</strong> Professional finishing standards.</li>
+                <li><strong>Safety:</strong> A safe workplace and responsible handling.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="hg-photo-grid">
+        <img src="Media/Test1.jpg" alt="" class="hg-gallery-click">
+        <img src="Media/Test2.jpg" alt="" class="hg-gallery-click">
+        <img src="Media/Test3.jpg" alt="" class="hg-gallery-click">
+        <img src="Media/Test4.jpg" alt="" class="hg-gallery-click">
+    </div>
+
+    <!-- LIGHTBOX -->
+    <div id="hgLightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" src="" alt="">
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <strong>HOWZIT GLEN</strong>
+            <small>© <span id="year"></span> Howzit Glen. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+    <div class="hg-modal" id="hgModal" aria-hidden="true">
+        <button class="hg-modal-close" id="hgModalClose" aria-label="Close">✕</button>
+        <img class="hg-modal-img" id="hgModalImg" alt="">
+    </div>
+</body>
+
+</html>
