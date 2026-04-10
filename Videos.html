@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JONDEC | Videos</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-inner">
+
+            <a href="Index.html" class="brand">
+                <img src="Media/CompanyLogo.png" alt="JONDEC logo">
+            </a>
+
+            <button class="nav-toggle" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="Index.html">Home</a>
+                <a href="UniqueProcess.html">Unique Process</a>
+                <a href="Specification.html">Specifications</a>
+                <a href="/HowzitGlen Website/home.html" target="_blank">Other Services</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Videos.html" class="active">Videos</a>
+                <a href="Contact.html" class="contact-btn">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- Hero Block (simple block like original style) -->
+    <section class="hero-process" style="
+    background:
+      linear-gradient(180deg, rgba(7,11,20,0.55), rgba(7,11,20,0.75)),
+      url('Media/specifications_clean.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  ">
+        <div class="container">
+            <div class="hero-process-inner reveal">
+                <section class="hero-contact">
+                    <div class="hero-contact-inner">
+                        <h1>Videos</h1>
+                    </div>
+            </div>
+    </section>
+
+    <!-- Content -->
+    <section class="section">
+        <div class="container reveal">
+
+            <div class="panel" style="text-align:center;">
+                <h3 style="margin-top:0;">Watch JONDEC in action</h3>
+                <p style="color:var(--muted); max-width:720px; margin:10px auto 18px;">
+                    Visit our YouTube channel to view coating work, refurbishments, and process demonstrations.
+                </p>
+
+                <a class="btn primary" href="https://www.youtube.com/channel/UC3Rm4c7FGGRa6mg375CcLww" target="_blank"
+                    rel="noopener">
+                    Open YouTube Channel
+                </a>
+
+                <div style="margin-top:14px; color:var(--muted); font-size:13px;">
+                    (Opens in a new tab)
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <strong>JONDEC</strong>
+            <small>© <span id="year"></span> Jondec Coating Specialists. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
