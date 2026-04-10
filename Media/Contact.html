@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JONDEC | Contact</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="nav-inner">
+
+            <a href="Index.html" class="brand">
+                <img src="Media/CompanyLogo.png" alt="JONDEC logo">
+            </a>
+
+            <button class="nav-toggle" aria-label="Open menu">
+                <span></span><span></span><span></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="Index.html">Home</a>
+                <a href="UniqueProcess.html">Unique Process</a>
+                <a href="Specification.html">Specifications</a>
+                <a href="/HowzitGlen Website/home.html"target="_blank">Other Services</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Videos.html">Videos</a>
+                <a href="Contact.html" class="active contact-btn">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+
+    <!-- CONTACT HERO -->
+    <section class="hero-contact">
+        <div class="hero-contact-inner">
+            <h1>Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+
+            <div class="contact-grid reveal">
+
+                <!-- LEFT: Info -->
+                <div class="panel contact-info">
+                    <h3>Get in touch</h3>
+                    <p style="color:var(--muted);">
+                        Contact Jondec Coating Specialists for quotations,
+                        refurbishments, and industrial coating services.
+                    </p>
+
+                    <div class="contact-item">
+                        <strong>📍 Address</strong>
+                        <span>4A De Kock Street Vulcania Brakpan 1554</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>📞 Office</strong>
+                        <a href="tel:+27117402936">+27 (0)11 740 2936</a>
+                        <a href="tel:+27117403796">+27 (0)11 740 3796</a>
+                        <a href="tel:+27117409603">+27 (0)11 740 9603</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>📞 Cell/ Whatshapp</strong>
+                        <a href="tel:+27810430654">+27 (0)81 043 0654</a>
+                    </div>
+                    <div class="contact-item">
+                        <strong>Fax</strong>
+                        <span>+27 (0)11 740 2563</span>
+                    </div>
+
+                    <div class="contact-item">
+                        <strong>✉ Email</strong>
+                        <a href="mailto:info@jondec.co.za">info@jondec.co.za</a>
+                    </div>
+                    <div class="map-wrap">
+                        <iframe class="map" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+                            src="https://www.google.com/maps?q=4A%20De%20Kock%20Street%20Vulcania%20Brakpan%201554&output=embed">
+                        </iframe>
+                    </div>
+
+                </div>
+
+                <!-- RIGHT: Form -->
+                <div class="panel contact-form">
+                    <h3>Request a Quote</h3>
+
+                    <form id="contactForm">
+
+                        <div class="form-row">
+                            <input id="name" type="text" placeholder="Your Name" required>
+                        </div>
+
+                        <div class="form-row">
+                            <input id="email" type="email" placeholder="Email Address" required>
+                        </div>
+
+                        <div class="form-row">
+                            <input id="phone" type="tel" placeholder="Phone Number">
+                        </div>
+
+                        <div class="form-row">
+                            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                        <div class="form-row robot-check">
+                            <label class="robot-label">
+                                <input type="checkbox" id="notRobot" required>
+                                <span>I’m not a robot</span>
+                            </label>
+
+                            <small id="robotError" class="robot-error">
+                                Please confirm you are not a robot.
+                            </small>
+                        </div>
+                        <button type="submit" class="btn primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <strong>JONDEC</strong>
+            <small>© <span id="year"></span> Jondec Coating Specialists. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+
+        document.getElementById("contactForm").addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const phone = document.getElementById("phone").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const subject = encodeURIComponent("JONDEC Quote Request");
+            const body = encodeURIComponent(
+                `Name: ${name}\nEmail: ${email}\nPhone: ${phone}\n\nMessage:\n${message}`
+            );
+
+            window.location.href = `mailto:info@jondec.co.za?subject=${subject}&body=${body}`;
+            e.target.reset();
+        });
+    </script>
+    <a class="wa-float"
+        href="https://wa.me/27810430654?text=Hi%20Jondec%2C%20I%20would%20like%20to%20request%20a%20quote."
+        target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        💬
+    </a>
+</body>
+
+</html>

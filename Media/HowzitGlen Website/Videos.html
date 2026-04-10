@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Howzit Glen | Videos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="nav-inner">
+
+      <a href="home.html" class="brand">
+        <img src="Media/HowzitGlenLogo.png" alt="Howzit Glen logo">
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-links">
+        <a href="home.html">Home</a>
+        <a href="/Index.html" target="_blank">Other Services</a>
+        <a href="Gallery.html">Gallery</a>
+        <a href="Videos.html">Videos</a>
+        <a href="Contact.html" class="active contact-btn">Contact</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hg-hero-small">
+    <div class="hg-wrap">
+      <h1>Videos</h1>
+      <p>See our work in action.</p>
+    </div>
+  </section>
+
+  <!-- VIDEOS -->
+  <section class="hg-videos">
+    <div class="hg-wrap">
+
+      <div class="hg-video-grid">
+
+        <div class="hg-video-card">
+          <div class="hg-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/oD-l_L6npBU?si=WA-V8jHQ9_9WGP6U"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="hg-video-meta">
+            <strong>Welcome</strong>
+            <span>Howzit Glen Show</span>
+          </div>
+        </div>
+
+        <div class="hg-video-card">
+          <div class="hg-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/eBLPBaIUDxY?si=V_mAswPbV5k2wLID"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="hg-video-meta">
+            <strong>Secrets Testing With Powder Coating</strong>
+            <span>Howzit Glen</span>
+          </div>
+        </div>
+
+        <div class="hg-video-card">
+          <div class="hg-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/HgQXMNHJm04?si=87ppCnErejgRqGo0"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="hg-video-meta">
+            <strong>Powder Coating A Chair</strong>
+            <span>Howzit Glen </span>
+          </div>
+        </div>
+
+        <div class="hg-video-card">
+          <div class="hg-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/bUp9NttdWIo?si=AkzFn_5A5KNzhLOi"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="hg-video-meta">
+            <strong>Scratch Test</strong>
+            <span>Howzit Glen</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Channel button -->
+      <div class="hg-video-cta">
+        <a class="hg-yt-btn" href="https://www.youtube.com/channel/UC3Rm4c7FGGRa6mg375CcLww" target="_blank"
+          rel="noopener">
+          View our YouTube Channel
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <strong>HOWZIT GLEN</strong>
+      <small>© <span id="year"></span> Howzit Glen. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+  <script src="Script.js"></script>
+</body>
+
+</html>

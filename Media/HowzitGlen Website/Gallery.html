@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Howzit Glen | Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header class="navbar">
+        <div class="nav-inner">
+
+            <a href="home.html" class="brand">
+                <img src="Media/HowzitGlenLogo.png" alt="Howzit Glen logo">
+            </a>
+
+            <button class="nav-toggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="/Index.html" target="_blank">Other Services</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Videos.html">Videos</a>
+                <a href="Contact.html" class="active contact-btn">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hg-hero-small">
+        <div class="hg-wrap">
+            <h1>Our Work</h1>
+            <p>Click any image to view full size.</p>
+        </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="hg-gallery-section">
+        <div class="hg-wrap">
+
+            <div class="hg-gallery-grid">
+
+                <img src="Media/Gall1.jpg" class="gallery-click" alt="">
+                <img src="Media/Gall2.jpg" class="gallery-click" alt="">
+                <img src="Media/Gall3.jpg" class="gallery-click" alt="">
+                <img src="Media/Gall4.jpg" class="gallery-click" alt="">
+                <img src="Media/Gall5.jpg" class="gallery-click" alt="">
+                <img src="Media/Gall6.jpg" class="gallery-click" alt="">
+                <img src="Media/Gall7.jpg" class="gallery-click" alt="">
+                <img src="Media/Gall8.jpg" class="gallery-click" alt="">
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- LIGHTBOX ) -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-img" src="" alt="">
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <strong>HOWZIT GLEN</strong>
+            <small>© <span id="year"></span> Howzit Glen. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JONDEC | Specifications</title>
+    <link rel="stylesheet" href="Style.css" />
+</head>
+
+<body>
+
+    <!-- Optional Social Strip -->
+    <div class="social-strip">
+        <a href="https://www.facebook.com/profile.php?id=100057529025901#" title="Facebook">f</a>
+        <a href="https://www.youtube.com/channel/UC3Rm4c7FGGRa6mg375CcLww" title="YouTube">▶</a>
+    </div>
+
+    <!-- Navbar (same as Index) -->
+    <header class="navbar">
+        <div class="nav-inner">
+
+            <a href="Index.html" class="brand">
+                <img src="Media/CompanyLogo.png" alt="JONDEC logo">
+            </a>
+
+            <button class="nav-toggle" aria-label="Open menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="nav-links">
+                <a href="Index.html">Home</a>
+                <a href="UniqueProcess.html">Unique Process</a>
+                <a href="Specification.html" class="active">Specifications</a>
+                <a href="/HowzitGlen Website/home.html" target="_blank">Other Services</a>
+                <a href="Gallery.html">Gallery</a>
+                <a href="Videos.html">Videos</a>
+                <a href="Contact.html" class="contact-btn">Contact</a>
+            </nav>
+
+        </div>
+    </header>
+
+    <!-- HERO (block like original) -->
+    <section class="hero-spec">
+        <div class="hero-spec-inner">
+            <h1>Specifications</h1>
+        </div>
+    </section>
+
+    <!-- Content -->
+    <section class="section">
+        <div class="container">
+
+            <div class="spec-wrap reveal">
+                <h2>General Specifications</h2>
+                <p class="spec-lead">
+                    Jondec is a specialist in Powder coating, Chemical stripping and Wet coating.
+                    Refurbishment is a far cheaper alternative to purchasing new equipment.
+                </p>
+
+                <h3>Pre-Treatment</h3>
+                <p>
+                    Pre-Treatment process refers to the treatment of metal surface, prior to applying the final finish,
+                    to retard corrosion of the base metal finish.
+                </p>
+
+                <h3>Aluminium Alloy Casting</h3>
+                <p>
+                    Aluminium casting are treated with a 5 stage chromate conversion, as recommended by the chemical
+                    manufacturer.
+                </p>
+
+                <h3>Mild Steel</h3>
+                <p>
+                    Mild steel will be treated in accordance with SABS 064 code of practice for the preparation of steel
+                    surface
+                    for coating. We can offer a 7 stages IRON or ZINC Phosphate option for our customers.
+                </p>
+
+                <h3>Stainless Steel</h3>
+                <p>We do a Abrasive blast to stainless steel before coating.</p>
+
+                <h2 style="margin-top:18px;">Powder Coating</h2>
+
+                <h3>Surface Appearance</h3>
+                <p>
+                    The surface will not show any pinholes, craters, fish eyes, loss of gloss, orange peel,
+                    powder contamination or blisters.
+                </p>
+
+                <h3>Colour, Texture and Gloss</h3>
+                <p>The finish will be inspected once per shift using the master samples supplied.</p>
+
+                <h3>Thickness</h3>
+                <p>
+                    Will be checked with a minimum of 3 determinations a maximum of 5 determinations using calibrated
+                    equipment.
+                </p>
+
+                <h2 style="margin-top:18px;">Chemical Stripping</h2>
+                <p>
+                    Chemical stripping can be done to 0.6mm steel plates without any damage to the steel,
+                    sand blasting 0.6mm steel however damages the thin steel.
+                </p>
+            </div>
+
+            <!-- Bottom tiles (4 blocks like original) -->
+            <div class="spec-tiles reveal">
+
+                <div class="spec-tile" style="background-image:url('Media/specificationblocks.png');">
+                    <div class="spec-tile-overlay">
+                        <h4>STEEL</h4>
+                        <ul>
+                            <li>7 stage iron phosphate system</li>
+                            <li>7 stage zinc phosphate system</li>
+                            <li>Sandblasting</li>
+                            <li>Steel stripping</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="spec-tile" style="background-image:url('Media/specificationblocks.png');">
+                    <div class="spec-tile-overlay">
+                        <h4>STAINLESS STEEL</h4>
+                        <ul>
+                            <li>Degrease and pickle process. Before Sandblasting.</li>
+                            <li>Sandblasting</li>
+                            <li>Stripping (up to 0.6mm)</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="spec-tile" style="background-image:url('Media/specificationblocks.png');">
+                    <div class="spec-tile-overlay">
+                        <h4>ALUMINIUM</h4>
+                        <ul>
+                            <li>5 stage process</li>
+                            <li>Stripping</li>
+                        </ul>
+                        <p class="tile-note">
+                            All these process can be seen in our specification as well as all our other process
+                        </p>
+                    </div>
+                </div>
+
+                <div class="spec-tile" style="background-image:url('Media/specificationblocks.png');">
+                    <div class="spec-tile-overlay">
+                        <h4>OVENS</h4>
+                        <p>We have 2 batch ovens and 2 conveyor ovens.</p>
+                        <p>Calibrated twice a year.</p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <strong>JONDEC</strong>
+            <small>© <span id="year"></span> Jondec Coating Specialists. All rights reserved.</small>
+        </div>
+    </footer>
+
+    <script src="Script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
+</body>
+
+</html>
